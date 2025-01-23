@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.sch246.rsb.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "StructureBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}
