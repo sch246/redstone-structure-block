@@ -1,45 +1,41 @@
 # Redstone Structure Block
 
-一个 Fabric 模组，允许在使用红石触发结构方块时，将结构保存到硬盘（永久存储）中，而不是内存中。
+A Fabric mod that allows saving structures to disk (permanent storage) instead of memory when triggering structure blocks with redstone.
 
-language: [English](./README_en.md)
+Repository: https://github.com/sch246/redstone-structure-block
 
-仓库地址: https://github.com/sch246/redstone-structure-block
+## Features
 
-## 功能特性
+- Adds a scoreboard objective `rules.redstoneSaveStructureBlock` to control structure saving behavior
+- When the score is greater than 0, structures will be saved to disk instead of memory
+- Works with redstone-triggered structure blocks
 
-- 添加了一个记分板目标 `rules.redstoneSaveStructureBlock` 来控制结构保存行为
-- 当分数大于 0 时，结构将保存到硬盘而不是内存中
-- 适用于被红石触发的结构方块
+## Usage
 
-## 使用方法
-
-1. 将模组安装到你的 Fabric 模组文件夹中
-2. 模组会自动创建一个记分板目标 `rules.redstoneSaveStructureBlock`
-3. 启用硬盘保存功能：
+1. Install the mod in your Fabric mod folder
+2. The mod will automatically create a scoreboard objective `rules.redstoneSaveStructureBlock`
+3. To enable saving to disk:
 ```
-
 /scoreboard players set # rules.redstoneSaveStructureBlock 1
 ```
-4. 禁用（恢复为默认的仅内存保存）：
+4. To disable (return to default memory-only saving):
 ```
-
 /scoreboard players set # rules.redstoneSaveStructureBlock 0
 ```
 
-## 运行要求
+## Requirements
 
 - Fabric Loader
 - Fabric API
 
-## 许可证
+## License
 
-本模组采用 MIT 许可证
+This mod is available under the MIT License.
 
-## 参与贡献
+## Contributing
 
-欢迎提交问题和拉取请求！
+Feel free to submit issues and pull requests!
 
-## 联系方式
+## Contact
 
-如有任何问题或建议，请联系 QQ 980001119
+For any questions or suggestions, please contact QQ 980001119
