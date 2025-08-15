@@ -17,17 +17,10 @@
 	"entrypoints": {
 		"main": [
 			"com.sch246.rsb.Redstonestructureblock"
-		],
-		"client": [
-			"com.sch246.rsb.RedstonestructureblockClient"
 		]
 	},
 	"mixins": [
-		"redstone-structure-block.mixins.json",
-		{
-			"config": "redstone-structure-block.client.mixins.json",
-			"environment": "client"
-		}
+		"redstone-structure-block.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.10",
