@@ -11,7 +11,7 @@ Repository: https://github.com/sch246/redstone-structure-block
 ## Usage
 
 - Install the mod in your Fabric mod folder
-- To disable (return to default memory-only saving):
+- To disable (return to vanilla memory-only saving):
 ```
 /gamerule redstoneSaveStructureBlock false
 ```
