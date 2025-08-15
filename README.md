@@ -6,21 +6,14 @@ Repository: https://github.com/sch246/redstone-structure-block
 
 ## Features
 
-- Adds a scoreboard objective `rules.redstoneSaveStructureBlock` to control structure saving behavior
-- When the score is greater than 0, structures will be saved to disk instead of memory
-- Works with redstone-triggered structure blocks
+- Adds a gamerule `redstoneSaveStructureBlock` to control if the structure is saved to disk or memory(defaults to disk)
 
 ## Usage
 
-1. Install the mod in your Fabric mod folder
-2. The mod will automatically create a scoreboard objective `rules.redstoneSaveStructureBlock`
-3. To enable saving to disk:
+- Install the mod in your Fabric mod folder
+- To disable (return to default memory-only saving):
 ```
-/scoreboard players set # rules.redstoneSaveStructureBlock 1
-```
-4. To disable (return to default memory-only saving):
-```
-/scoreboard players set # rules.redstoneSaveStructureBlock 0
+/gamerule redstoneSaveStructureBlock false
 ```
 
 ## Requirements
