@@ -72,7 +72,7 @@ jar {
 }
 // 同时也要设置 remapJar 任务
 remapJar {
-	archiveFileName.set("${project.archives_base_name}-v${project.mod_version}-1.21.2~1.21.8.jar")
+	archiveFileName.set("${project.archives_base_name}-v${project.mod_version}-1.21.2to1.21.8.jar")
 }
 
 // configure the maven publication
