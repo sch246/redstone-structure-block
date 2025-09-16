@@ -1,14 +1,14 @@
 package com.sch246.rsb.mixin;
 
-import com.sch246.rsb.Redstonestructureblock;
 import net.minecraft.block.StructureBlock;
 import net.minecraft.block.entity.StructureBlockBlockEntity;
-import net.minecraft.scoreboard.ScoreAccess;
 import net.minecraft.server.world.ServerWorld;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArgs;
 import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
+
+import static com.sch246.rsb.Redstonestructureblock.REDSTONE_SAVE_STRUCTURE_BLOCK;
 
 @Mixin(StructureBlock.class)
 public class StructureBlockMixin {
@@ -20,7 +20,7 @@ public class StructureBlockMixin {
             )
     )
     private void modifySaveStructure(Args args, ServerWorld world, StructureBlockBlockEntity blockEntity) {
-        ScoreAccess scoreAccess = Redstonestructureblock.getOrCreateScoreAccess(world);
-        args.set(0, scoreAccess.getScore() > 0);
+        boolean gamerule = world.getGameRules().getBoolean(REDSTONE_SAVE_STRUCTURE_BLOCK);
+        args.set(0,gamerule);
     }
 }
